@@ -1,0 +1,38 @@
+DROP DATABASE IF EXISTS `usuarios`;
+CREATE DATABASE `usuarios`;
+    DROP TABLE IF EXISTS `usuarios`.`usuarios`;
+    CREATE TABLE  `usuarios`.`usuarios` 
+    (
+        `email` varchar(45) NOT NULL DEFAULT '',
+        `clave` varchar(45) NOT NULL DEFAULT '',
+        PRIMARY KEY (`email`,`clave`)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+    DROP TABLE IF EXISTS `usuarios`.`bonoloto`;
+    CREATE TABLE  `usuarios`.`bonoloto` 
+    (
+        `usuario` varchar(45) NOT NULL DEFAULT '',
+        `numeros` varchar(45) NOT NULL DEFAULT '',
+        `fecha` varchar(45) NOT NULL DEFAULT '',
+        PRIMARY KEY (`numeros`)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+    DROP TABLE IF EXISTS `usuarios`.`datos`;
+    CREATE TABLE IF NOT EXISTS datos(
+        `usuario` varchar(45) NOT NULL DEFAULT '',
+        `aciertos` integer NOT NULL,
+        `errores` integer NOT NULL,
+        `tiempo` integer,
+        PRIMARY KEY (`usuario`)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+    DROP TABLE IF EXISTS `usuarios`.`usuario`;
+    CREATE TABLE IF NOT EXISTS usuario(
+        `usuario` VARCHAR(45),
+        `contraseña` VARCHAR(45) NOT NULL,
+        PRIMARY KEY (`usuario`,`contraseña`)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=latin1;

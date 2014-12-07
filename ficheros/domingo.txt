@@ -1,0 +1,4 @@
+    Esto es un ejemplo para comprobar
+    si funcionan o no los saltos de línea
+    en un documento de texto
+    que será leído desde php

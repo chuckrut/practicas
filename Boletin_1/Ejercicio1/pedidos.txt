@@ -1,0 +1,47 @@
+
+
+Nombre: Jes�s
+Direccion: Avda 1� de Mayo n�10
+Jamón y Queso: 2
+  Precio: 7€
+Napolitana: 1
+  Precio: 1.5€
+Mozzarella: 3
+  Precio: 21€
+
+
+  Precio: 29.5€
+IVA: 8%
+  Precio Total: 31.86€
+
+
+1-12-2014  11 : 22 : 15
+...............................................
+
+Nombre: Juan
+Direccion: calle lumbreras 22
+Napolitana: 4
+  Precio: 6€
+
+
+  Precio: 6€
+IVA: 8%
+  Precio Total: 6.48€
+
+
+1-12-2014  11 : 22 : 58
+...............................................
+
+Nombre: Juan
+Direccion: calle lumbreras 22
+Napolitana: 4
+  Precio: 6€
+
+
+  Precio: 6€
+IVA: 8%
+  Precio Total: 6.48€
+
+
+1-12-2014  11 : 50 : 51
+...............................................

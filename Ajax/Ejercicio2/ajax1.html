@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuestra Primera Aplicación Ajax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+<style>
+.displaybox{
+width:150px;
+background-color: #CC9900;
+border:2px solid #000000;
+padding:10px;
+font:24px normal verdana, helvetica, arial, sans-serif;
+}
+</style>
+<script language="javascript" type="text/javascript" src="ajax.js"></script>
+</head>
+
+<body background="B506012.JPG" style="background-color: #006666" onload="horaServidor()">
+  <center>
+<h1 style="color:#FFFF00"> Nuestra primera aplicación Ajax </h1>
+<h2> Obtener la hora del servidor sin actualizar la página </h2>
+<form>
+   <input type="button" onClick="horaServidor()" value="¿Cuál es la hora del servidor?">
+</form>
+<div id="showtime" class="displaybox"></div>
+ </center>
+</body>
+</html>

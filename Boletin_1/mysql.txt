@@ -1,0 +1,17 @@
+CREATE DATABASE `usuarios`;
+DROP TABLE IF EXISTS `usuarios`.`usuarios`;
+CREATE TABLE  `usuarios`.`usuarios` 
+(
+  `email` varchar(45) NOT NULL DEFAULT '',
+  `clave` varchar(45) NOT NULL DEFAULT '',
+  PRIMARY KEY (`email`,`clave`)
+)
+DROP TABLE IF EXISTS `usuarios`.`bonoloto`;
+CREATE TABLE  `usuarios`.`bonoloto` 
+(
+  `usuario` varchar(45) NOT NULL DEFAULT '',
+  `numeros` varchar(45) NOT NULL DEFAULT '',
+  `fecha` varchar(45) NOT NULL DEFAULT '',
+  PRIMARY KEY (`numeros`)
+)
+ ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -1,0 +1,9 @@
+CREATE DATABASE `usuarios`;
+DROP TABLE IF EXISTS `usuarios`.`usuarios`;
+CREATE TABLE  `usuarios`.`usuarios` 
+(
+  `nombre` varchar(45) NOT NULL DEFAULT '',
+  `clave` varchar(45) NOT NULL DEFAULT '',
+  PRIMARY KEY (`nombre`,`clave`)
+)
+ ENGINE=InnoDB DEFAULT CHARSET=latin1;

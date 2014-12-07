@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#menu>ul>li>ul ul {
+	display:none;
+}
+#menu>ul>li>span {
+	color: #FFF;
+	background-color: #399;
+}
+#menu>ul>li>span:hover {
+	background-color: #6CC;
+	color: #000;
+}
+#menu ul>li>ul>li>span {
+	background-color: #6CC;
+	color: #000;
+}
+#menu ul>li>ul>li>span:hover {
+	background-color: #399;
+	color: #FFF;
+}
+#menu span {
+	display: block;
+	border: solid 1px #fff;
+	padding: 8px;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#menu li {
+	width: 162px;
+}
+#menu>ul>li>ul {
+	position: absolute;
+	left: 162px;
+	top: 0;
+	display: none;
+}
+#menu>ul>li {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#menu>ul>li:hover>ul {
+	display: block;
+        position: relative;
+        float: right;
+}
