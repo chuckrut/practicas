@@ -1,6 +1,6 @@
 <?php
 
-$c = mysql_connect("localhost", "carmen", "carmen");
+$c = mysql_connect("localhost", "root", "");
 mysql_select_db("concurso", $c);
 $q1 = mysql_query("select * from usuarios where usuario='".$_GET['usuario']."'", $c);
 

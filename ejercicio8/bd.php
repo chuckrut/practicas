@@ -1,6 +1,6 @@
 <?php
 
-if ($c = mysql_connect("localhost", "carmen", "carmen")) {
+if ($c = mysql_connect("localhost", "root", "")) {
     echo "CONEXION ESTABLECIDA<BR>";
     if (mysql_query("CREATE DATABASE IF NOT EXISTS concurso", $c)) {
         echo "BD CREADA<BR>";
@@ -11,7 +11,7 @@ if ($c = mysql_connect("localhost", "carmen", "carmen")) {
                 clave VARCHAR (10)
             )", $c)) {
                 echo "TABLA CREADA<BR>";
-                if (mysql_query("INSERT usuarios (usuario, clave) VALUES ('carmen','carmen')", $c)) {
+                if (mysql_query("INSERT usuarios (usuario, clave) VALUES ('administrador','administrador')", $c)) {
                     echo "<h2> Se ha insertado correctamente</h2><br>";
                 } else {
                     echo "<h2> No se ha insertado</h2><br>";

@@ -1,6 +1,6 @@
 <?php
 
-if ($c = mysql_connect("localhost", "carmen", "carmen")) {
+if ($c = mysql_connect("localhost", "root", "")) {
     echo "CONEXION ESTABLECIDA<BR>";
     if (mysql_query("CREATE DATABASE IF NOT EXISTS concurso", $c)) {
         echo "BD CREADA<BR>";

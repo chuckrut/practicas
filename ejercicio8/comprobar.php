@@ -55,7 +55,7 @@ echo "<br>PREGUNTA 4, RESPUESTA ".$_SESSION['p4']." C/I: ". $p4;
 echo "<br>PREGUNTA 5, RESPUESTA ".$_SESSION['p5']." C/I: ". $p5;
 echo "<br>-----------<br>";
 
-if ($c = mysql_connect("localhost", "carmen", "carmen")) {
+if ($c = mysql_connect("localhost", "root", "")) {
     echo "CONEXION ESTABLECIDA<BR>";
     if (mysql_select_db("concurso", $c)) {
         echo "BASE DE DATOS SELECCIONADA<BR>";
