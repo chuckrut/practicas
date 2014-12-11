@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.centrado{
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); 
+}
+.horizontal {
+    text-align: center;
+}
+.derecha {
+    text-align: right;
+}
+img{
+
+    height: 400px;
+    width: 400px;
+}

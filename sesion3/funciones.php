@@ -1,7 +1,7 @@
 <?php
 function conexiones($usuario, $clave) {
 	$conectar = mysql_connect('localhost','root','');
-	mysql_select_db('usuarios',$conectar);
+	mysql_select_db('concurso',$conectar);
 	$sql = "SELECT * FROM `usuarios` WHERE `nombre`='$usuario' AND `clave`='$clave'";
 	$ejecutar_sql=mysql_query($sql,$conectar);
 	if (mysql_num_rows($ejecutar_sql)!=0){
