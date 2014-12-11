@@ -3,6 +3,8 @@
 require('modelo.php');
 
 $titulo="Concurso de preguntas";
+$opciones = array("MADRID", "ANDALUCIA", "NAVARRA", "MURCIA", "GALICIA");
+$pregunta = "¿Donde se encuentra este monumento?";
 
 if (isset($_GET['usuario']) == 'true' && isset($_GET['clave']) == 'true') {
     $u = existe($_GET['usuario']);

@@ -10,14 +10,14 @@
         <div class="centrado">
             <h1 class="horizontal"><?php echo $titulo ?></h1>
             <img src="images/p<?php echo $pagina ?>.jpg"/>
-            <p class="horizontal">PREGUNTA <?php echo $pagina ?>: ¿Donde se encuentra este monumento?</p>
+            <p class="horizontal">PREGUNTA <?php echo $pagina ?>: <?php echo $pregunta ?></p>
             <form class="horizontal" action="controlador.php" method="get">
                 <select name="p<?php echo $pagina ?>">
-                    <option>MADRID</option>
-                    <option>ANDALUCIA</option>
-                    <option>NAVARRA</option>
-                    <option>MURCIA</option>
-                    <option>GALICIA</option>
+                    <?php
+                    for ($i = 0; $i < sizeof($opciones); $i++) {
+                        ?><option><?php echo $opciones[$i] ?></option><?php
+                    }
+                    ?>
                 </select>
                 <input type="submit" value="Siguiente"/>
             </form>
